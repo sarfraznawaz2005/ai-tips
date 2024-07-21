@@ -1,0 +1,10 @@
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\bin\Debug\icon.ico
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\bin\Debug\AI-Tips.exe
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\bin\Debug\AI-Tips.pdb
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\obj\Debug\AITips.csprojResolveAssemblyReference.cache
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\obj\Debug\AITips.MainForm.resources
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\obj\Debug\AITips.SettingsForm.resources
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\obj\Debug\AITips.csproj.GenerateResource.Cache
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\obj\Debug\AI-Tips.exe
+C:\Users\Sarfraz\OneDrive\Documents\SharpDevelop Projects\AITips\AITips\obj\Debug\AI-Tips.pdb
