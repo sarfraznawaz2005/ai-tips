@@ -45,20 +45,41 @@ namespace AITips
 			}
 		}
 
+		private void BtnCopyToClipboard_Click(object sender, System.EventArgs e)
+		{
+			System.Windows.Forms.Clipboard.SetText(this.txtTip.Text);
+		}
+
+		private void BtnSaveToFile_Click(object sender, System.EventArgs e)
+		{
+			using (System.Windows.Forms.SaveFileDialog saveFileDialog = new System.Windows.Forms.SaveFileDialog())
+			{
+				saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All files (*.*)|*.*";
+				saveFileDialog.DefaultExt = "txt";
+				saveFileDialog.AddExtension = true;
+				if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+				{
+					System.IO.File.WriteAllText(saveFileDialog.FileName, this.txtTip.Text);
+				}
+			}
+		}
+		
 		private void InitializeTrayIcon()
 		{
 			notifyIcon = new NotifyIcon
 			{
 				Visible = true,
-				ContextMenu = new ContextMenu(new MenuItem[]
-				                              {
-				                              	new MenuItem("Show", ShowMainForm),
-				                              	new MenuItem("Settings", ShowSettingsForm),
-				                              	new MenuItem("Quit", QuitApplication)
-				                              })
-			};
+				Icon = new Icon("icon.ico"),
+				Text = "AI-Tips",
 
-			notifyIcon.Icon = new Icon("icon.ico");
+				ContextMenu = new ContextMenu(
+					new MenuItem[]{
+						new MenuItem("Show", ShowMainForm),
+						new MenuItem("Settings", ShowSettingsForm),
+						new MenuItem("Quit", QuitApplication)
+					}
+				)};
+
 
 			// Subscribe to the BalloonTipClicked event
 			notifyIcon.BalloonTipClicked += NotifyIcon_BalloonTipClicked;
