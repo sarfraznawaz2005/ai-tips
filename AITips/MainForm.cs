@@ -122,7 +122,6 @@ namespace AITips
 			{
 				string apiUrl = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=" + apiKey;
 
-				prompt = prompt + "\n\n Please answer without using any markdown or HTML syntax, your answer must be pure text albeit you can use new lines and spaces to nicely format your answer. Make sure your answer is as detailed as possible.";
 
 				var requestBody = new
 				{
